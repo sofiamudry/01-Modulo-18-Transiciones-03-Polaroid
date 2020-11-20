@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'Cedarville Cursive';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/cedarvillecursive/v12/yYL00g_a2veiudhUmxjo5VKkoqA-B_nuIrpw4cNOTw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    font-family: 'Cedarville Cursive';
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+}
+
+.polaroid {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 150px;
+    margin: 50px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.552);
+    padding: 10px 10px 60px 10px;
+    transition: transform .3s;
+}
+
+.p-01 {
+    transform: rotate(15deg);
+    position: relative;
+    bottom: 50px;
+}
+
+.p-02 {
+    transform: rotate(-5deg);
+    position: relative;
+    bottom: -50px;
+}
+
+.p-03 {
+    transform: rotate(5deg);
+}
+
+.photo {
+    height: 200px;
+    width: 100%;
+}
+
+.photo-01 {
+    background-color: seagreen;
+}
+
+.photo-02 {
+    background-color: steelblue;
+}
+
+.photo-03 {
+    background-color: orchid;
+}
+
+.description {
+    display: flex;
+    height: 0;
+    width: 100%;
+    position: relative;
+    top: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-01:hover, .p-02:hover, .p-03:hover {
+    transform: rotate(0deg);
+    transform: scale(1.4);
+}
